@@ -26,7 +26,7 @@ namespace WordLib
         public static string Counter(string input)
         {
             int number = input.Length;
-            string response = null;
+            string response = "this word is not short";
 
             if (number <= 5)
             {
