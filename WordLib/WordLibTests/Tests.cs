@@ -11,16 +11,19 @@ namespace WordLibTests
     public class Tests
     {
         /*
-            if 0 words, 1 space or 1 letter return flase because its not a word
+            if 0 or 1 space should fail, otherwise it is a pallindrome by the definition
         */
 
 
         [Theory]
-        [InlineData("book")]
-        [InlineData("boob")]
+        [InlineData("boob")]//should pass
+        [InlineData("a")]//should pass
+        [InlineData("aa")]//should pass
+        [InlineData("book")]//rest should fail
+        [InlineData("ab")]//should pass
         [InlineData("")]
         [InlineData(" ")]
-        [InlineData("a")]
+
 
         public void IsPallindromeTest(string myString)
         {

@@ -10,10 +10,11 @@ namespace WordLib
     {
         public static bool CheckForPallindrome(string input)
         {
-            if (input == "" || input == " " || input.Length == 1)
+            if (string.IsNullOrWhiteSpace(input) == true)
             {
                 return false;
             }
+
             return input.SequenceEqual(input.Reverse());
         }
     }
