@@ -12,10 +12,15 @@ namespace WordLib
         {
             if (string.IsNullOrWhiteSpace(input) == true)
             {
-                return false;
+                throw new ArgumentException("wrong input", "input");
             }
 
-            return input.SequenceEqual(input.Reverse());
+            if (input.SequenceEqual(input.Reverse()) == false)
+            {
+                return false;
+            }
+            
+            return true;
         }
     }
 }
