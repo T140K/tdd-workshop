@@ -28,7 +28,7 @@ namespace WordLibTests
 
 
             //Act
-            bool isPalindrome = myString.SequenceEqual(myString.Reverse());
+            bool isPalindrome = Program.CheckForPallindrome(myString);
 
 
             //Assert
