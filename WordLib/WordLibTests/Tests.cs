@@ -56,24 +56,34 @@ namespace WordLibTests
 
         }
 
-        [Fact]
-        public void InputWordLengthChecker()
+        [Theory]
+        [InlineData("log")]
+        [InlineData("glogg")]
+        public void InputWordLengthChecker(string input)
         {
             //Arrange
-            string shortWord = "gun";
             string expected = "this is a short word";
-            string actual = null;
 
             //Act
-            int shortWordLength = shortWord.Length;
-            if (shortWordLength <= 5)
-            {
-                actual = "this is a short word";
-            }
+            Program.Counter(input);
 
             //Assert
-            Assert.Equal(expected, actual);
+            Assert.Equal(expected, Program.Counter(input));
+        }
 
+        [Theory]
+        [InlineData("logger")]
+        public void InputWordLengthChecker_ShouldFail(string input)
+        {
+            //Arrange
+            string expected = "this is a short word";
+
+            //Act
+            Program.Counter(input);
+            
+
+            //Assert
+            Assert.NotSame(expected, Program.Counter(input));
         }
     }
 }

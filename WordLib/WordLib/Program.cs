@@ -19,8 +19,21 @@ namespace WordLib
             {
                 return false;
             }
-            
+
             return true;
+        }
+
+        public static string Counter(string input)
+        {
+            int number = input.Length;
+            string response = null;
+
+            if (number <= 5)
+            {
+                response = "this is a short word";
+            }
+
+            return response;
         }
     }
 }
