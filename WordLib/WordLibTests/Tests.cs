@@ -55,5 +55,25 @@ namespace WordLibTests
             Assert.False(Program.CheckForPallindrome(myString));
 
         }
+
+        [Fact]
+        public void InputWordLengthChecker()
+        {
+            //Arrange
+            string shortWord = "gun";
+            string expected = "this is a short word";
+            string actual = null;
+
+            //Act
+            int shortWordLength = shortWord.Length;
+            if (shortWordLength <= 5)
+            {
+                actual = "this is a short word";
+            }
+
+            //Assert
+            Assert.Equal(expected, actual);
+
+        }
     }
 }
