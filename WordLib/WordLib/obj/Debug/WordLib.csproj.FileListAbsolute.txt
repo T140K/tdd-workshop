@@ -1,0 +1,6 @@
+E:\VS-Projects\tdd-workshop\WordLib\WordLib\bin\Debug\WordLib.dll
+E:\VS-Projects\tdd-workshop\WordLib\WordLib\bin\Debug\WordLib.pdb
+E:\VS-Projects\tdd-workshop\WordLib\WordLib\obj\Debug\WordLib.csproj.AssemblyReference.cache
+E:\VS-Projects\tdd-workshop\WordLib\WordLib\obj\Debug\WordLib.csproj.CoreCompileInputs.cache
+E:\VS-Projects\tdd-workshop\WordLib\WordLib\obj\Debug\WordLib.dll
+E:\VS-Projects\tdd-workshop\WordLib\WordLib\obj\Debug\WordLib.pdb

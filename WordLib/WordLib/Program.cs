@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WordLib
 {
-    public class Class1
+    public class Program
     {
     }
 }
