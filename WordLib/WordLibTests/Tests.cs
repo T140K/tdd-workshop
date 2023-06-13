@@ -15,11 +15,17 @@ namespace WordLibTests
         */
 
 
-        [Fact]
-        public void IsPallindromeTest()
+        [Theory]
+        [InlineData("book")]
+        [InlineData("boob")]
+        [InlineData("")]
+        [InlineData(" ")]
+        [InlineData("a")]
+
+        public void IsPallindromeTest(string myString)
         {
             //Arrange
-            string myString = "lol";
+
 
             //Act
             bool isPalindrome = myString.SequenceEqual(myString.Reverse());
